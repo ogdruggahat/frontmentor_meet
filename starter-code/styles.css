@@ -1,10 +1,31 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
     margin: 0;
+    text-align: center;
+
 }
+h1,p{
+    margin: auto 10%;
+}
+h1{
+    font-size: clamp(2.5rem,6vw,4rem);
+    line-height: clamp(2.75rem,6vw,4rem);
+    font-weight: 900;
+    color: #28283D;
+}
+p{
+    font-size:16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #87879D;
+    width: 83%;
+    margin: 10%;
+}
+
+/* HEADER */
 header{
     position: relative;
-    text-align: center;
+    
 
 }
 .logo{
@@ -26,4 +47,67 @@ header .img{
 }
 h1{
     margin-top: 255px;
+}
+button{
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    margin-left: 25%;
+    width: 50%;
+    padding: 3%;
+    border-style: none;
+    border-radius: 90px;
+    background-color: #4D96A9; 
+    color: #fff;
+    margin-bottom: 5%;
+}
+.btn-small{
+    width:33%;
+    margin-left: 33%;
+    margin-bottom: 20%;
+    background-color: #855FB1;
+}
+.line{
+    width: 0px;
+    border: solid 0.5px;
+    border-color: #87879D;
+    height: 84px;
+    margin: 0 auto;
+}
+.round{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center ;
+   
+    border: 1px solid;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border-color: #87879D;
+}
+.round p{
+    margin: 0;
+    width: 100%;
+    align-self: center;
+
+}
+/* MAIN */
+main{
+
+}
+main p{
+
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7%;
+}
+.main-grid img{
+    width:150px;
+    border-radius: 3%;
+
 }
