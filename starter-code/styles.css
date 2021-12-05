@@ -14,12 +14,21 @@ h1{
     color: #28283D;
 }
 p{
-    font-size:16px;
-    line-height: 26px;
+    /* font-size:16px;
+    line-height: 26px; */
+    font-size: 18px;
+    line-height: 28px;
     font-weight: 500;
     color: #87879D;
-    width: 83%;
-    margin: 10%;
+    /* width: 83%;
+    margin: 10%; */
+    width: 90%;
+    margin: 10% 5%;
+}
+@media screen and (min-width:900px) {
+    p{
+        font-size: 20px;
+    }
 }
 
 /* HEADER */
@@ -80,34 +89,95 @@ button{
     margin: 0 auto;
     display: flex;
     justify-content: center ;
-   
+   position: relative;
     border: 1px solid;
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border-color: #87879D;
+    border-color: #a5a5aa;
+    z-index: 1;
+    background-color: #fafafa;
 }
 .round p{
     margin: 0;
     width: 100%;
     align-self: center;
+    color: #87879d !important;
 
 }
 /* MAIN */
-main{
 
-}
-main p{
-
-}
 .main-grid{
+    margin: 20% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 7%;
+   gap:7%;
+}
+.img-right{
+    justify-self: start !important;
 }
 .main-grid img{
     width:150px;
     border-radius: 3%;
+    align-self: center;
+    justify-self: end;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #4D96A9;
+    letter-spacing: 4px;
+}
+h2{
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 900;
+    color: #28283D;
+    width: 80%;
+    margin-left: 10%;
+}
+@media screen and (max-width:400px) {
+    h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
 
+/* FOOTER */
+
+footer p{
+    width: 84% !important;
+    margin: 10% 8% !important;
+    color: #FAFAFA !important;
+}
+footer h2{
+    color: #FAFAFA !important;
+}
+
+.card{
+background-color: #4D96A9;
+padding-top: 15%;
+padding-bottom: 15%;
+position: absolute;
+z-index: 0;
+top: 1810px;
+
+
+}
+
+footer button{   
+    background-color: #855FB1;
+    position: relative;
+    z-index: 2;
+}
+.bg-img{
+    position: absolute;
+    width: 390px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    opacity: 0.1;
 }
