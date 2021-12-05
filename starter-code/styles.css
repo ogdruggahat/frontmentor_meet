@@ -2,7 +2,6 @@ body{
     font-family: 'Red Hat Display', sans-serif;
     margin: 0;
     text-align: center;
-
 }
 h1,p{
     margin: auto 10%;
@@ -14,28 +13,18 @@ h1{
     color: #28283D;
 }
 p{
-    /* font-size:16px;
-    line-height: 26px; */
     font-size: 18px;
     line-height: 28px;
     font-weight: 500;
     color: #87879D;
-    /* width: 83%;
-    margin: 10%; */
     width: 90%;
     margin: 10% 5%;
 }
-@media screen and (min-width:900px) {
-    p{
-        font-size: 20px;
-    }
-}
+
 
 /* HEADER */
 header{
     position: relative;
-    
-
 }
 .logo{
     display: flex;
@@ -44,9 +33,9 @@ header{
     margin: 10% auto;
 }
 header .img{
-    width: 200px;
-   display: inline-block;
-   position: absolute;    
+    width: 420px;
+    display: inline-block;
+    position: absolute;    
 }
 .left{
     left:-20px
@@ -137,13 +126,7 @@ h2{
     font-weight: 900;
     color: #28283D;
     width: 80%;
-    margin-left: 10%;
-}
-@media screen and (max-width:400px) {
-    h2{
-        font-size: 32px;
-        line-height: 36px;
-    }
+    margin: 5% auto;
 }
 
 /* FOOTER */
@@ -173,11 +156,108 @@ footer button{
     position: relative;
     z-index: 2;
 }
-.bg-img{
+.mobile-footer{
     position: absolute;
     width: 390px;
     top: 0px;
     left: 0px;
     z-index: 1;
     opacity: 0.1;
+}
+/* MEDIA */
+
+/* MOBILE */
+@media screen and (max-width:400px) {
+    h2{
+        font-size: 32px;
+        line-height: 36px;
+    }
+    header .img{
+        width: 200px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width:500px) and (max-width:850px) {
+    h1{
+        margin:60% auto 0;
+        width: 40%;
+    }
+    p{
+        width: 60%;
+        margin: 10% auto;
+    }
+
+    .left{
+        left:-30px
+    }
+    .right{
+        right: -30px;
+    }  
+    .🏺{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button{
+        padding: 20px 0;
+        margin-left: 0px;
+        display: inline-block;
+        width: 200px;
+    }
+    .btn-small{
+        margin-left: 3%;
+        width: 150px;
+    }
+    .main-grid{
+        margin: 10% 0;
+        grid-template-columns: repeat(4,170px);
+        grid-template-rows: 1fr;
+        gap:2%;
+        justify-content: center !important;
+    }
+    .main-grid img{
+        width: 170px;
+        align-self: center;
+    }
+    h2{
+        width: 55%;
+        
+    
+    }
+    main p{
+        width: 80%;
+    }
+    .card{
+        top: 2050px;
+        padding: 5% 0 0;
+    }
+    .mobile-footer{
+        display: none;
+    }
+    .tablet-footer{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        opacity: 0.1;
+    }
+    .card{
+        padding: 0px auto;
+    }
+    
+    footer p{
+        width: 75% !important;
+        margin: 5% auto !important;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width:900px) {
+    p{
+        font-size: 20px;
+    }
+    .tablet-footer{
+        display: none;
+    }
 }
